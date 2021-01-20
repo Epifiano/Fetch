@@ -125,7 +125,7 @@ c5='[35m'; c6='[36m'
 c7='[37m'; c8='[38m'
 c9='^[[37m'
 
-palette="$c1 $c1 $c2 $c2 $c3 $c3 $c4 $c4 $c5 $c5 $c6 $c6 "
+palette="[7m$c1 $c1 $c2 $c2 $c3 $c3 $c4 $c4 $c5 $c5 $c6 $c6 [m"
 
 # CONEJO
 
@@ -139,8 +139,8 @@ ART7="${c0}    {>o<}='   "
 
 # CODIGO CONEJO
 cat <<-EOF
- ${ART1}${title}${c0}     
- ${ART2}${distro}${c0}
+ ${ART1}${c2}{title}${c0}     
+ ${ART2}${c2}distro${c0}  ${distro}
  ${ART3}${shell}${c0}
  ${ART4}${wm}${c0}
  ${ART5}${kernel}${c0}
